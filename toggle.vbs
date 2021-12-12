@@ -2,7 +2,7 @@ vbsDir = CreateObject("Scripting.FileSystemObject").GetParentFolderName(WScript.
 Set oShell = CreateObject("Wscript.Shell") 
 Dim strArgs
 stateCmd = "cmd /c " & vbsDir & "\state.bat"
-connectCmd = "cmd /c " & vbsDir & "\connect.bat"
+connectCmd = "cmd /c " & vbsDir & "\connectForce.bat"
 disconnectCmd = "cmd /c " & vbsDir & "\disconnect.bat"
 errCode = oShell.Run(stateCmd,0,true)
 If errCode = 1 Then
